@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_02_095744) do
+ActiveRecord::Schema.define(version: 2020_10_02_102211) do
 
   create_table "templates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "template_explain", null: false
-    t.integer "category", null: false
+    t.integer "category_id", null: false
     t.string "template_image", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
