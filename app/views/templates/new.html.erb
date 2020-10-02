@@ -1,0 +1,66 @@
+<div class="templates-sell-contents">
+  <header class="templates-sell-header">
+    <%= link_to image_tag('logo.png' , size: '250x80'), "/" %>
+
+  </header>
+  <div class="templates-sell-main">
+    <h2 class="templates-sell-title">テンプレートの情報を入力</h2>
+    <%= form_with model: @template,local: true do |f| %>
+
+    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+    <%# render 'shared/error_messages', model: f.object %>
+    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+
+    <%# テンプレート画像 %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        テンプレート画像
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :template_image, id:"templates-image" %>
+      </div>
+    </div>
+    <%# /テンプレート画像 %>
+    <%# テンプレート説明 %>
+    <div class="new-templates">
+      <div class="templates-explain">
+        <div class="weight-bold-text">
+          テンプレートの説明
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :template_explain, class:"templates-text", id:"templates-info", placeholder:"カテゴリーなどテンプレートについての説明（必須 1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+    </div>
+    <%# テンプレート説明 %>
+
+    <%# テンプレートの詳細 %>
+    <div class="templates-detail">
+      <div class="weight-bold-text">テンプレートの詳細</div>
+      <div class="form">
+        <div class="weight-bold-text">
+          カテゴリー
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"templates-category"}) %>
+      </div>
+    </div>
+    <%# /テンプレートの詳細 %>
+    <%# 下部ボタン %>
+    <div class="sell-btn-contents">
+      <%= f.submit "掲載する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+
+  <footer class="templates-sell-footer">
+    <p class="inc">
+      ©︎webmaker,Inc.
+    </p>
+  </footer>
+</div>
