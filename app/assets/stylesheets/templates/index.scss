@@ -1,0 +1,122 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+.title-contents {
+  width: 100vw;
+  background-image: image-url('webmaker-header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 8vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 24px;
+}
+
+.apple-btn {
+  margin-right: 1vw;
+  height: 9vh;
+}
+
+.google-btn {
+  height: 9vh;
+}
+
+/* ホームページ作成 */
+.webmaker-create{
+  background-color: #fff;
+  align-items: center;
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.exhibit-contents{
+  width: 250px;
+  height: 50px;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.template-img-content {
+  position: relative;
+}
+
+.template-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+
+/* WEB MAKERの特徴 */
+.feature-contents {
+  padding: 5vh 15vw;
+}
+
+.feature-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.feature-contents>.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #3ccace;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-lists>.list {
+  width: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-list-text {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.feature-list-description {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* //WEB MAKERの特徴 */
