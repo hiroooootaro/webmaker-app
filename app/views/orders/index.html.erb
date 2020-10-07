@@ -1,1 +1,33 @@
-<h1>こんにちは</h1>
+<div class="templates-select-main">
+  <div class="title-content">
+  テンプレートを選択してください。
+  </div>
+  <%= form_with  url: "#", class: 'template-exhibit', local: true do |f| %>
+  <div class="template-select">
+    <ul class="template-category">
+      <div class="template">
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>美容 ・健康</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>コンサルティング</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>サービス</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>アート ・デザイン</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>写真・ポートフォリオ</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>ネットショップ</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>バー・レストラン</div>
+      </div>
+      <div class="template">
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>観光事業</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>住まい・ガーデン</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>ファッション</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>コミュニティ・クラブ</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>個人向け</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>ブログ</div>
+        <div class="template-list"><%= f.radio_button :category_id, "fun" %>その他</div>
+      </div>
+    </ul>
+  </div>
+  <div class="continue">
+     <%= f.submit "次へ" ,class:"continue-order" %>
+  </div>
+  <% end %>
+
+</div>
