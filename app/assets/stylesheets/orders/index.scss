@@ -1,7 +1,7 @@
-.templates-select-main{
+.category-select-main{
   width: 100%;
   height: 100vh;
-  background-color: rgb(249, 249, 249);;
+  background-color: rgb(249, 249, 249);
 }
 
 .title-content{
@@ -11,8 +11,8 @@
   justify-content: center;
   font-size: 30px;
 }
-/* テンプレート一覧 */
-.template-select{
+/* 一覧 */
+.category-select{
   margin: 25px 200px;
   height: 60vh;
   display: flex;
@@ -27,10 +27,7 @@
   justify-content: space-around;
   width: 75%;
 }
-.template1{
-
-}
-.template-list{
+.cotegory-list{
   display: block;
   padding: 15px;
 }

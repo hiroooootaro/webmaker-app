@@ -3,8 +3,13 @@ class OrdersController < ApplicationController
   end
 
   def template
+    #binding.pry
+    @template = Template.new
   end
 
+  def show
+    @template = Template.new
+  end
   def create
     @order = Order.new(order_params)
 

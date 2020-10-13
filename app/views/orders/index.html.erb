@@ -1,27 +1,27 @@
-<div class="templates-select-main">
+<div class="category-select-main">
   <div class="title-content">
-  テンプレートを選択してください。
+  カテゴリーを選択してください
   </div>
-  <%= form_with  url: template_orders_path, class: 'template-exhibit', local: true do |f| %>
-  <div class="template-select">
+  <%= form_with  model: @order, url: template_orders_path, class: 'template-exhibit', local: true do |f| %>
+  <div class="category-select">
     <ul class="template-category">
-      <div class="template">
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>美容 ・健康</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>コンサルティング</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>サービス</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>アート ・デザイン</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>写真・ポートフォリオ</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>ネットショップ</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>バー・レストラン</div>
+      <div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 2 %>美容 ・健康</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 3 %>コンサルティング</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 4 %>サービス</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 5 %>アート ・デザイン</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 6 %>写真・ポートフォリオ</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 7 %>ネットショップ</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 8 %>バー・レストラン</div>
       </div>
-      <div class="template">
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>観光事業</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>住まい・ガーデン</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>ファッション</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>コミュニティ・クラブ</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>個人向け</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>ブログ</div>
-        <div class="template-list"><%= f.radio_button :category_id, "fun" %>その他</div>
+      <div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 9 %>観光事業</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 10 %>住まい・ガーデン</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 11 %>ファッション</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 12 %>コミュニティ・クラブ</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 13 %>個人向け</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 14 %>ブログ</div>
+        <div class="cotegory-list"><%= f.radio_button :category_id, 15 %>その他</div>
       </div>
     </ul>
   </div>
