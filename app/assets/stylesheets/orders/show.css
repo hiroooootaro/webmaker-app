@@ -1,0 +1,17 @@
+.template-select-main{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.all-template{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.template{
+  width: 90vw;
+  height: 75vh;
+  background-color: rgb(249, 249, 249);
+}
+.template-image{}

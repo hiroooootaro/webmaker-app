@@ -1,14 +1,10 @@
 class OrdersController < ApplicationController
   def index
-  end
-
-  def template
-    #binding.pry
-    @template = Template.new
+    
   end
 
   def show
-    @template = Template.new
+    @templates = Template.all.order("created_at DESC")
   end
   def create
     @order = Order.new(order_params)

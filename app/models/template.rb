@@ -3,5 +3,6 @@ class Template < ApplicationRecord
   belongs_to_active_hash :category
 
   validates :category_id, numericality: { other_than: 1 } 
+  
   belongs_to :user
 end

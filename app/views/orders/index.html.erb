@@ -2,7 +2,7 @@
   <div class="title-content">
   カテゴリーを選択してください
   </div>
-  <%= form_with  model: @order, url: template_orders_path, class: 'template-exhibit', local: true do |f| %>
+  <%= form_with  model: @order, url: order_path(:id), class: 'template-exhibit', local: true do |f| %>
   <div class="category-select">
     <ul class="template-category">
       <div>
