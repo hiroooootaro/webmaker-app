@@ -5,8 +5,7 @@
   <%= form_with  model: @order, url: "#", class: 'all-template', local: true do |f| %>
     <div class="template">
       <% @templates.each do |template| %>
-        <%#= f.attachment_field template, :image %>
-        <%#= image_tag template.template_image.inspect, class: "template-image" %>
+        <%=  image_tag template.template_image, class: "template-image" %>
       <% end %>
     </div>
   <% end %>
