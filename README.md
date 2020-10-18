@@ -42,6 +42,8 @@ belongs_to :template
 belongs_to :user
 
 
-アプリケーション名
-#webmaker(h1)
+
+# アプリケーションの説明
+## アプリケーション名:WebMaker
+
 
