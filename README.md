@@ -41,3 +41,7 @@ has_one :order
 belongs_to :template
 belongs_to :user
 
+
+アプリケーション名
+#webmaker(h1)
+
