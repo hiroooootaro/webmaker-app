@@ -44,6 +44,6 @@ belongs_to :user
 
 
 # アプリケーションの説明
-## アプリケーション名:WebMaker
+## アプリケーション名  :WebMaker
 
 
