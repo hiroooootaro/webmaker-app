@@ -3,11 +3,17 @@
   テンプレートを選択してください
   </div>
   <%= form_with  model: @order, url: "#", class: 'all-template', local: true do |f| %>
-    <div class="template">
+    <ul class='template-lists'>
       <% @templates.each do |template| %>
-        <%=  image_tag template.template_image, class: "template-image" %>
+        <li class='list'>
+          <div class="template-img-content">
+            <%=  image_tag template.template_image, class: "template-image" %>
+          </div>
+          <div class = "template-details">
+          </div>
+        </li>
       <% end %>
-    </div>
+    </ul>
   <% end %>
 
 </div>
