@@ -2,7 +2,7 @@
   <div class="title-content">
   テンプレートを選択してください
   </div>
-  <%= form_with  model: @order, url: "#", class: 'all-template', local: true do |f| %>
+  <%= form_with  model: @order,url: new_order_path(:id), class: 'all-template', local: true do |f| %>
     <ul class='template-lists'>
       <% @templates.each do |template| %>
         <li class='list'>
@@ -10,6 +10,7 @@
             <%=  image_tag template.template_image, class: "template-image" %>
           </div>
           <div class = "template-details">
+          <%= f.submit "注文" ,class:"continue-order" %>
           </div>
         </li>
       <% end %>

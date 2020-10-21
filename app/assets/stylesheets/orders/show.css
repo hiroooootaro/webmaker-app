@@ -22,6 +22,7 @@
 }
 .template-lists{
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,14 +30,16 @@
   
 }
 .template-lists>.list {
-  width: 37vh;
-  padding: 1vw;
   list-style: none;
 }
 .template-img-content{
-  position: relative;
+  margin: 30px;
 }
 
 .template-image{
   width: 40vh;
+  height: 24vh;
+}
+.template-details{
+  margin: 30px;
 }
