@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :templates 
   resources :orders 
   post 'orders/:id' => 'orders#show'
+  post '/orders/new/:id'=> 'orders#new'
 end

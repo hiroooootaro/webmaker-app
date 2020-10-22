@@ -1,19 +1,17 @@
 class OrdersController < ApplicationController
   def index
-    
-  end
-  def template
-    @templates = Template.all.order("created_at DESC")
+    @order = Order.new
   end
 
   def show
+    @order = Order.new
     @templates = Template.all.order("created_at DESC")
   end
 
   def new
-    @templates = Template.all
+    @order = Order.new
   end
-  
+
   def create
     @order = Order.new(order_params)
   end
