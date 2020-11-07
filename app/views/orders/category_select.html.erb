@@ -1,9 +1,9 @@
-<div class="category-select-main">
+<div class = "template-select-main">
   <div class="title-content">
-  カテゴリーを選択してください
+  テンプレートを選択してください
   </div>
-  <%= form_with  model: @order, url: order_path(:id), class: 'template-exhibit', local: true do |f| %>
-  <div class="category-select">
+  <%= form_with  model: @order, class: 'template-exhibit', local: true do |f| %>
+    <div class="category-select">
     <ul class="template-category">
       <div>
         <div class="cotegory-list"><%= f.radio_button :category_id, 2 %>美容 ・健康</div>
@@ -29,5 +29,4 @@
      <%= f.submit "次へ" ,class:"continue-order" %>
   </div>
   <% end %>
-
 </div>

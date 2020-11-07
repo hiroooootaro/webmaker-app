@@ -2,10 +2,15 @@ class OrdersController < ApplicationController
   def index
     @order = Order.new
   end
+  def category_select 
+    @templates = Template.all.order("created_at DESC")
+  end
+
+  def template_select
+    @templates = Template.all.order("created_at DESC")
+  end
 
   def show
-    @order = Order.new
-    @templates = Template.all.order("created_at DESC")
   end
 
   def new
@@ -19,6 +24,6 @@ class OrdersController < ApplicationController
 
   private
   def order_params
-    params.require(:order).permit(:ordermessage, :template_id, :category_id).merge(user_name: current_user.id,template_id: Template.id)
+    params.permit(:ordermessage, :template_id, :category_id).merge(user_name: current_user.id,template_id: Template.id)
   end
 end
