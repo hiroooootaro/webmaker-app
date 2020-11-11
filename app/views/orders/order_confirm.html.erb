@@ -2,7 +2,7 @@
   <div class="title-content">
   テンプレートを選択してください
   </div>
-  <%= form_with  model: @order, class: 'template-exhibit', local: true do |f| %>
+  <%= form_with url: template_orders_path(@order.id),class: 'template-exhibit', local: true do |f| %>
     <div class="category-select">
     <ul class="template-category">
       <div>
@@ -25,6 +25,10 @@
       </div>
     </ul>
   </div>
+  <div class="order-message">
+    <%= f.text_area :order_message, class:"web-order-text", id:"order-name", placeholder:"注文内容（500文字以内）", maxlength:"500" %>
+  </div>
+  
   <div class="continue">
      <%= f.submit "次へ" ,class:"continue-order" %>
   </div>

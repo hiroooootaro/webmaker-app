@@ -1,18 +1,25 @@
 class OrdersController < ApplicationController
-  def category_select 
+  def order_confirm 
+    @order = Template.find(params[:id])
   end
 
   def template_select
-    @templates = Template.all.order("created_at DESC")
+    @template = Template.all.order("created_at DESC")
+    @orders = Order.new
   end
 
   def create
     @order = Order.new(order_params)
+    if @order.save
+      redirect_to root_path
+    else
+      render :order_confirm
+    end
   end
 
 
   private
   def order_params
-    params.permit(:ordermessage, :template_id, :category_id).merge(user_name: current_user.id,template_id: Template.id)
+    params.permit(:order_message, :category_id, :template_id).merge(user_name: current_user.id)
   end
 end

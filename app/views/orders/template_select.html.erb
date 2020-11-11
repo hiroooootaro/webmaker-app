@@ -3,13 +3,13 @@
   テンプレートを選択してください。
   </div>
   <ul class='template-lists'>
-    <% @templates.each do |template| %>
-      <%= link_to category_select_orders_path(template.id) do %>
-        <li class='list'>
-          <div class="template-img-content">
-            <%=  image_tag template.template_image, class: "template-image" %>
-          </div>
-        </li>
+    <% @template.each do |template| %>
+      <li class='list'>
+        <%= link_to order_confirm_path(template.id) do %>
+        <div class="template-img-content">
+          <%=  image_tag template.template_image, class: "template-image" %>
+        </div>
+      </li>
       <% end %>
     <% end %>
   </ul>
