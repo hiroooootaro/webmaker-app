@@ -4,8 +4,8 @@ class OrdersController < ApplicationController
   end
 
   def template_select
-    @template = Template.all.order("created_at DESC")
-    @orders = Order.new
+    @templates = Template.all.order("created_at DESC")
+    @order = Order.new
   end
 
   def create
@@ -13,6 +13,7 @@ class OrdersController < ApplicationController
     if @order.save
       redirect_to root_path
     else
+      @order = Template.find(params[:template_id])
       render :order_confirm
     end
   end

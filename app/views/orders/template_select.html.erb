@@ -3,7 +3,7 @@
   テンプレートを選択してください。
   </div>
   <ul class='template-lists'>
-    <% @template.each do |template| %>
+    <% @templates.each do |template| %>
       <li class='list'>
         <%= link_to order_confirm_path(template.id) do %>
         <div class="template-img-content">
