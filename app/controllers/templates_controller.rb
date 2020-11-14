@@ -1,5 +1,9 @@
 class TemplatesController < ApplicationController
 
+  def order_check
+    @order_check = Order.find(params[:template_id])
+  end
+
   def index
   end
 
