@@ -1,0 +1,39 @@
+.category-select-main{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(249, 249, 249);
+}
+
+.title-content{
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+/* 一覧 */
+.category-select{
+  margin: 25px 200px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+
+}
+.template-category{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cotegory-list{
+  display: block;
+  padding: 15px;
+}
+.continue{
+  display: flex;
+  justify-content: center;
+}
+.continue-order{
+  background-color:#3ccace;
+}

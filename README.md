@@ -17,7 +17,7 @@ has_many :orders
 | Column          | Type       | Option     |
 |-----------------|------------|------------|
 | template_explain| string     | null: false|
-| category        | bigint     | null: false|
+| category_id     | refarences | null: false, foreign_key: true|
 | template_image  | string     | null: false|
 | user_id         | references | null: false, foreign_key: true|
 

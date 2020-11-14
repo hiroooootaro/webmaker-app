@@ -1,0 +1,45 @@
+.template-select-main{
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+.all-template{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template{
+  width: 90vw;
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(249, 249, 249);
+  padding: 50px;
+}
+.template-lists{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(249, 249, 249);
+  
+}
+.template-lists>.list {
+  list-style: none;
+}
+.template-img-content{
+  margin: 30px;
+}
+
+.template-image{
+  width: 40vh;
+  height: 24vh;
+}
+.template-details{
+  margin: 30px;
+}
