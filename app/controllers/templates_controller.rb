@@ -1,7 +1,8 @@
 class TemplatesController < ApplicationController
 
-  def order_check
-    @order_check = Order.find(params[:template_id])
+  def show
+    @order_check = Order.all.order("created_at DESC")
+    @template = Template.find(params[:id])
   end
 
   def index

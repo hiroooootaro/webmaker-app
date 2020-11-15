@@ -1,1 +1,17 @@
-<h1>こんにちわ</h1>
+<div class="order-check-top">
+  <div class="title-content">
+  注文内容の確認
+  </div>
+  <div class="order-details">
+    <% @order_check.each do |order_check| %>
+      <% if current_user.id == order_check.user_name %>
+          <div class="order-image">
+          </div>
+          <div class="order-category">
+          </div>
+          <div class="order-message">
+          </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
