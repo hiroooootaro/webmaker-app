@@ -6,10 +6,13 @@
     <% @order_check.each do |order_check| %>
       <% if current_user.id == order_check.user_name %>
           <div class="order-image">
+            <%= image_tag @template.template_image%>
           </div>
           <div class="order-category">
+            <%= order_check.category.name%>
           </div>
           <div class="order-message">
+            <%= order_check.order_message%>
           </div>
       <% end %>
     <% end %>
