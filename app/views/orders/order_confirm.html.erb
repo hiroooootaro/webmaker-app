@@ -26,11 +26,24 @@
     </ul>
   </div>
   <div class="order-message">
-    <%= f.text_area :order_message, class:"web-order-text", id:"order-name", placeholder:"注文内容（500文字以内）", maxlength:"500" %>
+    <%= f.text_area :order_message,width: 100, class:"web-order-text", id:"order-name", placeholder:"注文内容（500文字以内）", maxlength:"500" %>
+  </div>
+  <div class="order-note">
+    <span class="note-heading">注意書き</span>
+    <div class="note">
+    下記をご承知の注文を確定してください
+    </div>
+    </div>
+    <div class="first-note">
+    1、注文を2つ以上することはできません。
+    </div>
+    <div class="second-note">
+    2、製作者が注文作成し始めた時から注文の編集、削除ができなくなります。（編注に関してはチャット機能でお伝えください。）
+    </div>
   </div>
   
   <div class="continue">
-     <%= f.submit "次へ" ,class:"continue-order" %>
+     <%= f.submit "注文確定" ,class:"continue-order" %>
   </div>
   <% end %>
 </div>
