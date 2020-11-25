@@ -1,0 +1,32 @@
+<div class="order-check-top">
+  <div class="title-content">
+  注文内容の確認
+  </div>
+  <li class="order-details">
+    <% @order_check.each do |order_check| %>
+      <% if current_user.id == order_check.user_name %>
+        <div class="order-date">
+          <div class="order-image-contents">
+            <div class="img-content">選択したテンプレート</div>
+            <%# if @template.template_image.id == order_check.template_id %>
+              <%= image_tag @template.template_image ,class:"order-image"%>
+            <%# end %>
+          </div>
+          <ul class="order-sentence">
+            <span class= "main-sentence">ホームページ詳細<span>
+            <div class="order-category">
+              <span class= "sentence">カテゴリー<span>
+              <%= order_check.category.name%>
+            </div>
+            <div class="order-message">
+              <span class= "sentence">注文内容<span>
+              <%= order_check.order_message%>
+            </div>
+          </ul>
+        </div>
+      <% else %>
+      <div class="no-order">注文がありません</div>
+      <% end %>
+    <% end %>
+  </li>
+</div>

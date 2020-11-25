@@ -16,4 +16,7 @@ class Category < ActiveHash::Base
     { id: 14, name: 'ブログ'},
     { id: 15, name: 'その他'},
   ]
+  include ActiveHash::Associations
+  has_many :orders
+  has_many :templates
 end

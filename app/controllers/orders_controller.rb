@@ -1,4 +1,8 @@
 class OrdersController < ApplicationController
+
+  def show
+    @order_check = Order.find(params[:template_id])
+  end
   def order_confirm 
     @order = Template.find(params[:id])
   end
