@@ -54,13 +54,6 @@
   padding: 1vh 0;
 }
 
-.category-list {
-  text-decoration: none;
-  margin-right: 3vw;
-  color: #333333;
-  margin-top:50px ;
-}
-
 .lists-right {
   display: flex;
   list-style: none;

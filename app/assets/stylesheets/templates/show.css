@@ -2,4 +2,34 @@
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
+  
+}
+.order-details{
+  list-style: none;
+}
+.order-date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 30px 0;
+}
+.order-image-contents{
+}
+
+.img-content{
+
+}
+
+.order-image{
+  width: 500px;
+}
+
+.order-sentence{
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 700px;
+      height: 300px;
 }
